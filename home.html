@@ -1,16 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500&family=Rubik:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="home.css">
+    <title>Home page</title>
 </head>
-<body>
-    <h1>hello</h1>
 
-    <button id="logout">Logout</button>
+<body>
+    <header>
+        <div class="container">
+            <div class="header">
+                <a href="/home.html" class="book-logo">
+                    <img src="/img/logo-blue.svg" alt="site-logo">
+                </a>
+                <div class="search">
+                    <img src="/img/search.svg" alt="">
+                    <input type="search" value="" class="search-input" placeholder="Search books">
+                </div>
+                <div class="header-end">
+                    <img src="/img/sun.svg" alt="icon">
+                    <button id="logout" class="logout-btn">Logout</button>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <div class="header-bottom">
+                <div class="results">
+                    <p class="search-result">Showing <span class="showing">0</span></p>
+                    <p class="search-result res">Result <span class="result">0</span></p>
+                </div>
+                <form class="form">
+                    <img src="/img/calendar.png" alt="">
+                    <input type="submit" value="Order by newest" class="newest">
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <section class="home">
+        <div class="bookmarks">
+            <h3 class="bookmarks-title">Bookmarks</h3>
+            <p class="bookmarks-subtitle">If you don’t like to read, you haven’t found the right book</p>
+            <ul class="bookmarks-list">
+                <template class="bookmark-template">
+                    <li class="bookmark-item">
+                        <div class="list-item">
+                            <h4 class="item-title">Python</h4>
+                            <p class="item-subtitle">David M. Beazley</p>
+                        </div>
+                        <div class="list-button">
+                            <a href="" class="reading-btn">
+                                <button class="read-btn">
+                                    <img src="/img/book-open.png" alt="icon">
+                                </button>
+                            </a>
+                            <button class="delete-btn">
+                                <img src="/img/delete.png" alt="">
+                            </button>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </div>
+        <ul class="cards">
+            <template class="card-template">
+                <li class="book">
+                    <div class="card-img">
+                        <img class="book__img" src="/img/Login.jpg" alt="img" width="200" height="200">
+                    </div>
+                    <h2 class="book__title">Python</h2>
+
+                    <p class="book__avtor">David M. Beazley</p>
+                    <p class="book__year">2018</p>
+                    <div class="btns">
+                        <button class="bookmark-btn">Bookmark</button>
+                        <button class="more-btn">More Info</button>
+                    </div>
+                    <a href="http://books.google.co.uz/books?id=LqmaDwAAQBAJ&printsec=frontcover&dq=python&hl=&cd=2&source=gbs_api"
+                        class="reading-btn"><button class="read">Read</button></a>
+                </li>
+            </template>
+        </ul>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <script src="./js/index.js"></script>
+    <script src="./js/home.js"></script>
 </body>
+
 </html>

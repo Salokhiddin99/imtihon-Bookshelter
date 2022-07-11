@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    overflow-x: hidden;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    width: 670px;
+    height: 48px;
+    background: #F8FAFD;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.search-input {
+    border: none;
+    outline: none;
+    width: 600px;
+    background-color: #F8FAFD;
+    text-indent: 20px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: rgba(0, 0, 0, 0.24);
+}
+
+.header-end {
+    display: flex;
+    align-items: center;
+}
+
+.logout-btn {
+    border: none;
+    outline: none;
+    padding: 11px 23px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    background: #0D75FF;
+    border-radius: 4px;
+    margin-left: 38px;
+}
+
+.line {
+    width: 100vw;
+    height: 1px;
+    background-color: #cccccc;
+}
+
+.header-bottom {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-result {
+    margin-left: 380px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #222531;
+}
+.results {
+    display: flex;
+    justify-content: left;
+}
+
+.form {
+    padding: 8px 16px;
+    display: flex;
+    align-items: center;
+    background: #A6B0C3;
+    border-radius: 4px;
+}
+
+.newest {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookmarks {
+    width: 25%;
+    padding: 0 80px;
+}
+.res {
+    margin-left: 20px;
+}
+.bookmarks-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.bookmarks-subtitle {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 155.6%;
+    color: #000000;
+}
+
+.cards {
+    width: 75%;
+    background-color: #F8FAFD;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.book {
+    margin-top: 40px;
+    width: 26%;
+    background-color: #FFFFFF;
+    padding: 13px 25px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.card-img {
+    width: 249px;
+    height: 238px;
+    background-color: #F8FAFD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.book__img {
+    text-align: center;
+    width: 201px;
+    height: 202px;
+    border-radius: 5px;
+}
+
+.book__title {
+    margin-top: 10px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+.book__avtor {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+}
+
+.book__year {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+}
+
+.btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.bookmark-btn {
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 37px;
+    background: #FFD80D;
+    border-radius: 4px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.more-btn {
+    border: none;
+    outline: none;
+    width: 120px;
+    height: 37px;
+    background: rgba(13, 117, 255, 0.05);
+    border-radius: 4px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #0D75FF;
+}
+
+.read {
+    border: none;
+    outline: none;
+    width: 246px;
+    height: 37px;
+    background: #75828A;
+    border-radius: 4px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+
+}
+
+
+.bookmark-item {
+    width: 218px;
+    height: 72px;
+    background-color: #F8FAFD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.item-title {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+
+.item-subtitle {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 18px;
+    color: #757881;
+}
+
+.read-btn,
+.delete-btn {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
